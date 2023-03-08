@@ -2,6 +2,7 @@
 
 Data: [Link](https://disk.yandex.ru/d/0IwCBL9HA2OFlg)
 
+Process of training: [wandb](https://wandb.ai/vandanov2010/my-project3?workspace=user-vandanov2010)
 Tasks:
 
 - [ ] Сделать train.csv/val.csv. Переписать baseline (masters_of_arts_ml) чтоб данные читались из файлика и можно было начать обучение
