@@ -14,15 +14,19 @@ def read_image(root_dir):
         filename = filename.name
         if filename.endswith('.jpg'):
             img = cv2.imread(root_dir + filename)
-            img = cv2.cvtColor(img, cv2.COLOR_RGB2GRAY)
-            img = cv2.resize(img, dsize=(128, 128))
-            data.append(img)
-            ids.append(root_dir + filename)
+
+            if img != None:
+                img = cv2.cvtColor(img, cv2.COLOR_RGB2GRAY)
+                img = cv2.resize(img, dsize=(128, 128))
+                data.append(img)
+                ids.append(root_dir + filename)
+            else:
+                print(f'Error {filename}')
 
     return np.array(data), ids
 
 
-def divide_clusters(root_dir=ROOT_DIR, num_clusters=3, mode='cpu'):
+def divide_clusters(root_dir=ROOT_DIR, num_clusters=2, mode='cpu'):
     dataframe, ids = read_image(root_dir)
     dataframe = dataframe.reshape(-1, 128*128)
     kmean = KMeans(n_clusters=num_clusters)
