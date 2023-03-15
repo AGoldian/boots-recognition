@@ -1,0 +1,3 @@
+test_my109.csv - solution using only neural network. Best score on public (0.62)
+test_mod_wdup - solution using only md5 hash (most robust)
+test_with_label - test, that we submit as final solution (idk the difference between test_mod_wdup)
