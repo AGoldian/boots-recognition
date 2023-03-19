@@ -1,0 +1,15 @@
+fake_headers
+scrapy
+crochet
+hashlib
+Pillow
+pandas
+bs4
+torch
+tqdm
+timm
+seaborn
+opencv-python
+scikit-learn
+wandb
+albumentations
