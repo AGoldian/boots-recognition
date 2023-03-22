@@ -2,7 +2,7 @@ import os
 import pandas as pd
 from tqdm import tqdm
 
-DIR_FILES = r'C:\Users\20291626\Desktop\data\\' # Directory PARSE DATA
+DIR_FILES = r'parse_Data\\' # Directory PARSE DATA
 fork_test = pd.read_csv(r'data\test.csv')
 fork_test['class_id'] = -1
 
