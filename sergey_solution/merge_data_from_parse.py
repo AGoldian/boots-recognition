@@ -3,7 +3,8 @@ import pandas as pd
 from tqdm import tqdm
 
 DIR_FILES = r'./parse_data/'  # Directory PARSE DATA
-fork_test = pd.read_csv('./data/test_mod_wdup.csv') # already filled with hash
+# fork_test = pd.read_csv('./data/test_mod_wdup.csv') # already filled with hash
+fork_test = pd.read_csv('./data/test_mod_mktime_hash.csv') # already filled with hash
 # fork_test['class_id'] = -1
 
 print('Start added data')
